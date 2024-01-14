@@ -14,6 +14,7 @@ class CounterViewController: UIViewController {
     
     private let viewModel: CounterViewModel = CounterViewModel()
     
+    // TODO: Combine 이해 필요
     private let input: PassthroughSubject<CounterViewModel.Input, Never> = .init()
     private var cancellables: Set<AnyCancellable> = Set<AnyCancellable>()
     
