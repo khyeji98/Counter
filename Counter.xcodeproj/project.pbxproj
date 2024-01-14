@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		3376B6E82B528F3B0038FECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6E72B528F3B0038FECF /* AppDelegate.swift */; };
 		3376B6EA2B528F3B0038FECF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6E92B528F3B0038FECF /* SceneDelegate.swift */; };
-		3376B6EC2B528F3B0038FECF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6EB2B528F3B0038FECF /* ViewController.swift */; };
+		3376B6EC2B528F3B0038FECF /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6EB2B528F3B0038FECF /* CounterViewController.swift */; };
 		3376B6EF2B528F3B0038FECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3376B6ED2B528F3B0038FECF /* Main.storyboard */; };
 		3376B6F12B528F3C0038FECF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3376B6F02B528F3C0038FECF /* Assets.xcassets */; };
 		3376B6F42B528F3C0038FECF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3376B6F22B528F3C0038FECF /* LaunchScreen.storyboard */; };
 		3376B6FF2B528F3C0038FECF /* CounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6FE2B528F3C0038FECF /* CounterTests.swift */; };
 		3376B7092B528F3C0038FECF /* CounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7082B528F3C0038FECF /* CounterUITests.swift */; };
 		3376B70B2B528F3C0038FECF /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */; };
+		3376B7182B52B0090038FECF /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7172B52B0090038FECF /* CounterModel.swift */; };
+		3376B71A2B52B0480038FECF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7192B52B0480038FECF /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		3376B6E42B528F3B0038FECF /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3376B6E72B528F3B0038FECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3376B6E92B528F3B0038FECF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3376B6EB2B528F3B0038FECF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3376B6EB2B528F3B0038FECF /* CounterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterViewController.swift; sourceTree = "<group>"; };
 		3376B6EE2B528F3B0038FECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3376B6F02B528F3C0038FECF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3376B6F32B528F3C0038FECF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +51,8 @@
 		3376B7042B528F3C0038FECF /* CounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3376B7082B528F3C0038FECF /* CounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITests.swift; sourceTree = "<group>"; };
 		3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3376B7172B52B0090038FECF /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
+		3376B7192B52B0480038FECF /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +105,13 @@
 			children = (
 				3376B6E72B528F3B0038FECF /* AppDelegate.swift */,
 				3376B6E92B528F3B0038FECF /* SceneDelegate.swift */,
-				3376B6EB2B528F3B0038FECF /* ViewController.swift */,
+				3376B6EB2B528F3B0038FECF /* CounterViewController.swift */,
 				3376B6ED2B528F3B0038FECF /* Main.storyboard */,
 				3376B6F02B528F3C0038FECF /* Assets.xcassets */,
 				3376B6F22B528F3C0038FECF /* LaunchScreen.storyboard */,
 				3376B6F52B528F3C0038FECF /* Info.plist */,
+				3376B7172B52B0090038FECF /* CounterModel.swift */,
+				3376B7192B52B0480038FECF /* CounterView.swift */,
 			);
 			path = Counter;
 			sourceTree = "<group>";
@@ -258,9 +264,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3376B6EC2B528F3B0038FECF /* ViewController.swift in Sources */,
+				3376B6EC2B528F3B0038FECF /* CounterViewController.swift in Sources */,
 				3376B6E82B528F3B0038FECF /* AppDelegate.swift in Sources */,
+				3376B7182B52B0090038FECF /* CounterModel.swift in Sources */,
 				3376B6EA2B528F3B0038FECF /* SceneDelegate.swift in Sources */,
+				3376B71A2B52B0480038FECF /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
