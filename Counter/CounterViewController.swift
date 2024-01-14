@@ -5,17 +5,23 @@
 //  Created by 김혜지 on 1/13/24.
 //
 
+import Combine
 import UIKit
 
 class CounterViewController: UIViewController {
     // TODO: frame을 .zero로 했을 때와 self.view.frame으로 했을 때 비교
-    private lazy var counterView: CounterView = CounterView(frame: self.view.frame, labelText: self.counter.count.description)
+    private lazy var counterView: CounterView = CounterView(frame: self.view.frame)
     
-    private let counter: Counter = Counter()
+    private let viewModel: CounterViewModel = CounterViewModel()
+    
+    private let input: PassthroughSubject<CounterViewModel.Input, Never> = .init()
+    private var cancellables: Set<AnyCancellable> = Set<AnyCancellable>()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.addSubViews()
+        self.bind()
+        self.setCountLabel()
     }
     
     private func addSubViews() {
@@ -29,16 +35,32 @@ class CounterViewController: UIViewController {
             counterView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
         ])
     }
+    
+    private func bind() {
+        let output = viewModel.transform(input: input.eraseToAnyPublisher())
+        
+        output
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] event in
+                switch event {
+                case let .updateCountLabel(text):
+                    self?.counterView.updateLabel(text: text)
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    private func setCountLabel() {
+        input.send(.getCount)
+    }
 }
 
 extension CounterViewController: CounterManager {
     func increase() {
-        self.counter.increase()
-        self.counterView.updateLabel(text: self.counter.count.description)
+        input.send(.increase)
     }
     
     func decrease() {
-        self.counter.decrease()
-        self.counterView.updateLabel(text: self.counter.count.description)
+        input.send(.decrease)
     }
 }

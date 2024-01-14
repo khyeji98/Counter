@@ -18,6 +18,7 @@
 		3376B70B2B528F3C0038FECF /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */; };
 		3376B7182B52B0090038FECF /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7172B52B0090038FECF /* CounterModel.swift */; };
 		3376B71A2B52B0480038FECF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7192B52B0480038FECF /* CounterView.swift */; };
+		3376B71E2B53F8560038FECF /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B71D2B53F8560038FECF /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3376B7172B52B0090038FECF /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
 		3376B7192B52B0480038FECF /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		3376B71D2B53F8560038FECF /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CounterViewModel.swift; path = ../../Documents/CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,12 +107,13 @@
 			children = (
 				3376B6E72B528F3B0038FECF /* AppDelegate.swift */,
 				3376B6E92B528F3B0038FECF /* SceneDelegate.swift */,
-				3376B6EB2B528F3B0038FECF /* CounterViewController.swift */,
 				3376B6ED2B528F3B0038FECF /* Main.storyboard */,
 				3376B6F02B528F3C0038FECF /* Assets.xcassets */,
 				3376B6F22B528F3C0038FECF /* LaunchScreen.storyboard */,
 				3376B6F52B528F3C0038FECF /* Info.plist */,
 				3376B7172B52B0090038FECF /* CounterModel.swift */,
+				3376B71D2B53F8560038FECF /* CounterViewModel.swift */,
+				3376B6EB2B528F3B0038FECF /* CounterViewController.swift */,
 				3376B7192B52B0480038FECF /* CounterView.swift */,
 			);
 			path = Counter;
@@ -269,6 +272,7 @@
 				3376B7182B52B0090038FECF /* CounterModel.swift in Sources */,
 				3376B6EA2B528F3B0038FECF /* SceneDelegate.swift in Sources */,
 				3376B71A2B52B0480038FECF /* CounterView.swift in Sources */,
+				3376B71E2B53F8560038FECF /* CounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

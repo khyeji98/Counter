@@ -44,13 +44,6 @@ final class CounterView: UIView {
     // TODO: weak를 사용해야 하는 이유?
     weak var delegate: CounterManager?
     
-    init(frame: CGRect, labelText: String) {
-        super.init(frame: frame)
-        self.setCountLabelText(labelText)
-        self.addSubViews()
-        self.addTargetAction()
-    }
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.addSubViews()
