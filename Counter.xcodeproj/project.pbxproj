@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		332A936E2B58012200D4E4F3 /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332A936D2B58012200D4E4F3 /* CounterViewModel.swift */; };
 		3376B6E82B528F3B0038FECF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6E72B528F3B0038FECF /* AppDelegate.swift */; };
 		3376B6EA2B528F3B0038FECF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6E92B528F3B0038FECF /* SceneDelegate.swift */; };
 		3376B6EC2B528F3B0038FECF /* CounterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B6EB2B528F3B0038FECF /* CounterViewController.swift */; };
@@ -18,7 +19,6 @@
 		3376B70B2B528F3C0038FECF /* CounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */; };
 		3376B7182B52B0090038FECF /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7172B52B0090038FECF /* CounterModel.swift */; };
 		3376B71A2B52B0480038FECF /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B7192B52B0480038FECF /* CounterView.swift */; };
-		3376B71E2B53F8560038FECF /* CounterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3376B71D2B53F8560038FECF /* CounterViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		332A936D2B58012200D4E4F3 /* CounterViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterViewModel.swift; sourceTree = "<group>"; };
 		3376B6E42B528F3B0038FECF /* Counter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Counter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3376B6E72B528F3B0038FECF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3376B6E92B528F3B0038FECF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,7 +55,6 @@
 		3376B70A2B528F3C0038FECF /* CounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3376B7172B52B0090038FECF /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
 		3376B7192B52B0480038FECF /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
-		3376B71D2B53F8560038FECF /* CounterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CounterViewModel.swift; path = ../../Documents/CounterViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +112,7 @@
 				3376B6F22B528F3C0038FECF /* LaunchScreen.storyboard */,
 				3376B6F52B528F3C0038FECF /* Info.plist */,
 				3376B7172B52B0090038FECF /* CounterModel.swift */,
-				3376B71D2B53F8560038FECF /* CounterViewModel.swift */,
+				332A936D2B58012200D4E4F3 /* CounterViewModel.swift */,
 				3376B6EB2B528F3B0038FECF /* CounterViewController.swift */,
 				3376B7192B52B0480038FECF /* CounterView.swift */,
 			);
@@ -270,9 +270,9 @@
 				3376B6EC2B528F3B0038FECF /* CounterViewController.swift in Sources */,
 				3376B6E82B528F3B0038FECF /* AppDelegate.swift in Sources */,
 				3376B7182B52B0090038FECF /* CounterModel.swift in Sources */,
+				332A936E2B58012200D4E4F3 /* CounterViewModel.swift in Sources */,
 				3376B6EA2B528F3B0038FECF /* SceneDelegate.swift in Sources */,
 				3376B71A2B52B0480038FECF /* CounterView.swift in Sources */,
-				3376B71E2B53F8560038FECF /* CounterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
